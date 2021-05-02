@@ -1,0 +1,15 @@
+@import '../../../styles/conf';
+
+.container {
+    background-color: $BACKGROUND_COLOR;
+    height: 100vh;
+    display: flex;
+
+    &__aside {
+        width: 18%;
+    }
+
+    &__content {
+        width: 82%;
+    }
+}

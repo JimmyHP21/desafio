@@ -1,0 +1,115 @@
+@import '../../../styles/conf';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .container__header_green {
+        display: none;
+    }
+  }
+
+
+.container__header {
+    height: 140px;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+
+    &_green{
+        background-color: $GREEN;
+        width: 18%;
+        height: 140px;
+
+        > img {
+            margin: 4% 20%;
+            width: 200px;
+        }
+    }
+
+    &_white {
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        width: 82%;
+        height: 140px;
+
+        .header__search {
+            padding: 2px 20px;
+            border-radius: 50px;
+            border: 1px solid $FONT_COLOR;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-left: 50px;
+            width: 60%;
+
+            > svg {
+                transform: rotate(269deg);
+                color: $FONT_COLOR;
+                font-size: 20px;
+            }
+
+            &_input {
+                width: 100%;
+                padding: 12px 24px;
+
+                background-color: transparent;
+                transition: transform 250ms ease-in-out;
+                font-size: 14px;
+                line-height: 18px;
+
+                color: $FONT_COLOR;
+
+                border-radius: 50px;
+                border: 1px solid transparent;
+                transition: all 250ms ease-in-out;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+
+                &::placeholder {
+                    color: color(#000 a(0.8));
+                    text-transform: titlecase;
+                    letter-spacing: 1.5px;
+                }
+
+                &:hover,
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+
+
+        .header__bell {
+            font-size: 45px;
+            display: flex;
+            color: $FONT_COLOR;
+            font-weight: 500;
+
+            .header__user {
+                font-size: 14px;
+                height: 15vh;
+                width: 91px;
+                margin: -17px 40px;
+                border-radius: 50%;
+                background-color: $FONT_COLOR;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                > svg {
+                    color: white;
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

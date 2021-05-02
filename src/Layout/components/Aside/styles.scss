@@ -1,0 +1,56 @@
+@import '../../../styles/conf';
+
+.aside__content {
+    background-color: white;
+    height: 100vh;
+
+    &_list {
+        padding: 20px;
+
+        .active {
+            border-left: 5px solid $GREEN;
+            margin: 0 -20px 0 -20px;
+            background-color: #1bbc9b1c;
+        }
+
+        .__item {
+            margin-left: -20px;
+            display: flex;
+            height: 60px;
+            align-items: center;
+            
+            &_icon {
+                color: $GREEN;
+                font-size: 35px;
+                padding-left: 10px;
+                margin-top: 6px;
+            }
+
+            &_text {
+                color: $FONT_COLOR;
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+        .__item:last-child {
+            margin: 0 -20px 0 -20px;
+            display: flex;
+            background-color: $GREEN;
+            align-items: center;
+            
+            &_icon {
+                color: white !important;
+                font-size: 35px;
+                padding-left: 10px;
+                margin-top: 6px;
+            }
+
+            &_text {
+                color: white;
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
