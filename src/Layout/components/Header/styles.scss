@@ -96,16 +96,15 @@
                 font-size: 14px;
                 height: 15vh;
                 width: 91px;
-                margin: -17px 40px;
+                margin: -25px 40px;
                 border-radius: 50%;
-                background-color: $FONT_COLOR;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 > svg {
-                    color: white;
+                    color: $FONT_COLOR;
                     width: 90%;
                     height: 90%;
                 }
