@@ -4,14 +4,21 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-@media screen and (max-width: 500px) {
-    .container__header_green {
-        display: none;
-    }
-  }
+@media screen and (max-width: 1024px) {
+    .container__header {
 
+        &_green {
+            display: none;
+        }
+
+        &_white {
+            width: 100% !important;
+        }
+    }
+}
 
 .container__header {
     height: 140px;
@@ -42,7 +49,7 @@
         .header__search {
             padding: 2px 20px;
             border-radius: 50px;
-            border: 1px solid $FONT_COLOR;
+            border: 1px solid #9b9b9b21;
             display: flex;
             justify-content: end;
             align-items: center;
@@ -89,24 +96,25 @@
         .header__bell {
             font-size: 45px;
             display: flex;
-            color: $FONT_COLOR;
+            color: #6b6b6b;
             font-weight: 500;
 
             .header__user {
                 font-size: 14px;
                 height: 15vh;
                 width: 91px;
-                margin: -25px 40px;
+                margin: -50px 40px;
                 border-radius: 50%;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                > svg {
+                > img {
                     color: $FONT_COLOR;
-                    width: 90%;
-                    height: 90%;
+                    width: 80%;
+                    height: 50%;
+                    border-radius: 50%;
                 }
             }
         }

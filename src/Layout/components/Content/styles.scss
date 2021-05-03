@@ -9,7 +9,43 @@
         width: 18%;
     }
 
+    @media screen and (max-width: 1024px) {
+        .container {
+            &__aside {
+                display: none;
+            }
+
+            &__content {
+                width: 91%;
+            }
+        }
+        
+    }
+
     &__content {
+        color: $FONT_COLOR;
         width: 82%;
+        flex-direction: row;
+
+        .__title {
+            padding: 40px 0 0 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            color: #6b6b6b;
+
+            &_txt {
+                display: flex;
+                align-items: center;
+                border-left: 4px solid $GREEN;
+                height: 35px;
+                padding: 0 10px;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            
+        }
+        
     }
 }
