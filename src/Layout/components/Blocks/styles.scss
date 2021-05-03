@@ -1,0 +1,46 @@
+@import '../../../styles/conf';
+
+.__blocks {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 26px;
+
+    &_block {
+        border-radius: 10px;
+        background-color: white;
+        height: 115px;
+        width: 23%;
+        margin: 0 10px;
+        box-shadow: 7px 5px 17px 0;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+
+        .__tblock {
+            padding: 5px 25px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .__tvalue {
+            padding: 5px 25px;
+            font-size: 30px;
+            font-weight: 700;
+            color: $GREEN;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .__blocks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &_block {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
